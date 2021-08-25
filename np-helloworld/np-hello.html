@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Np Hello</title>
+
+<script>
+
+function SayHello()
+{
+	test = document.getElementById("pluginObj");
+	alert(test.sayHello());
+}
+
+</script>
+
+</head>
+
+<body>
+<h1>Hello</h1>
+
+<embed id="pluginObj" type="application/x-helloworld" width=300 height=200>
+<embed windowless=1 id="pluginObj2" type="application/x-helloworld" width=300 height=200>
+
+<!-- <embed id="pluginObj" type="application/x-helloworld" width=200 height=100> 
+<embed id="pluginObj" type="application/x-helloworld" width=200 height=100> 
+ -->
+
+<input id="textInput" value="Hello" onclick="SayHello()" type="button">
+
+<br>
+<br>
+<input id="f1" type="text" size="30" maxlength="30" value ="">
+
+</body>
+</html>
